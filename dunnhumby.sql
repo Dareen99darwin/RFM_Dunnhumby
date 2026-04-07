@@ -220,20 +220,27 @@ Select household_key,
 From rfm_score
 
 
+-- How many customers are there in each segement?
 
-SELECT segments, COUNT(household_key) as customer_count
+SELECT segments, COUNT(Distinct household_key) as customer_count
 FROM rfm_segments
 GROUP BY segments
 ORDER BY customer_count DESC
 
+-- I need to find the percentage of people that have used coupons in each segment
 
+With coupon_data AS (
+	Select s.segments,
+		Count (Distinct s.household_key) Filter
+				(Where t.coupon_disc <> 0  OR t.coupon_match_disc <> 0) as coupon_customers,
+		Count (Distinct s.household_key) as customers
+	From rfm_segments s
+	Left Join transaction_data t On s.household_key = t.household_key
+	Group By s.segments
+	)
 
-
-
-
-
-
-
-
-
+Select segments, customers, coupon_customers,
+	Round (100.0 * coupon_customers/customers, 2) as coupon_per
+From coupon_data
+Order By customers desc
 
