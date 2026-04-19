@@ -62,8 +62,9 @@ Power BI — interactive dashboard and visualization
 **Files**
 
 rfm_analysis.sql — all SQL queries including EDA, RFM scoring, and table creation
-
+retention_analysis.sql - SQL queries for the retention analysis by weeks and by department by weeks
 dunnhumby_dashboard.pbix — Power BI dashboard file
+
 
 Author
 Darin 
