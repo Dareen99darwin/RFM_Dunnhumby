@@ -32,11 +32,19 @@ Built an interactive dashboard sliceable by customer segment
 
 **Key Findings**
 
-Potential Loyalists is the largest segment with 680 customers — a major opportunity for conversion to Champions
-Champions generate the highest sales despite being only 358 customers — high value, high engagement
-97.49% of Champions have used coupons, suggesting promotions play a key role in retaining top customers
-New Customers have the lowest coupon usage at 41.18% — onboarding campaigns could improve early engagement
-Cant Lose Them segment shows 93.90% coupon usage but low recency — win-back campaigns are critical for this group
+RFM Segmentation
+
+- Potential Loyalists is the largest segment with 680 customers — the biggest conversion opportunity
+- Champions generate the highest sales despite being only 358 customers
+- 97.49% of Champions have used coupons vs only 41.18% of New Customers — promotions play a key role in retaining top customers
+- Can't Lose Them segment shows 93.90% coupon usage but low recency — critical win-back target
+
+Retention
+
+- 37.5% of customers don't return after their first purchase — the single biggest drop in the customer lifecycle
+- Retention stabilizes at 55–65% by week 2 and remains consistent — loyalty is established within the first 2 weeks
+- GROCERY has the highest week 1 retention at 54.90% — the primary anchor department
+- Clear split between essential categories (GROCERY, DRUG GM, PRODUCE) with high habitual retention and specialty categories (COSMETICS, SEAFOOD) with low occasional retention
 
 **Dashboard**
 The Power BI dashboard includes:
